@@ -3,7 +3,7 @@
 
     angular
         .module('nooStim')
-        .directive('speakr', ['$window', '$timeout', 'SpeakrService', 'malarkey', function($window, $log, $timeout, SpeakrService, malarkey) {
+        .directive('speakr', function() {
             var directive = {
                 restrict: 'E',
                 scope: {
@@ -52,10 +52,10 @@
 
             return directive;
 
-            function linkFunc(scope, el, attr, vm) {
+            function linkFunc(scope, el) {
                 scope.el = el;
                 
 
             }
-        }]);
+        });
 })();

@@ -14,7 +14,6 @@
 
             function getWord() {
                 var deferred = $q.defer();
-                console.log("new version")
                 return $http.get(apiHost)
                     .then(getWordComplete)
                     .catch(getWordFailed);
