@@ -7,6 +7,10 @@
 
   /** @ngInject */
   function MainController() {
-    //var vm = this;
+    var vm = this;
+    vm.speakrs=[];
+    vm.addMantra = function(){
+      vm.speakrs.push({});
+    }
   }
 })();

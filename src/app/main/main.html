@@ -1,13 +1,20 @@
-<div layout="vertical" flex="100" layout-fill>
+<div ng-controller="MainController as vm" layout="vertical" flex="100" layout-fill>
 
-  <md-content>
+    <md-content flex>
 
-    <section class="jumbotron" flex>
-      <h1>n00-st1m</h1>
-      <p class="lead">
-      	An Experimental Transfigurator
-      </p>
-    </section>
-  </md-content>
+        <section class="jumbotron">
+            <h1>n00-st1m</h1>
+            <p class="lead">
+                An Experimental Transfigurator
+            </p>
+            <md-button class="md-raised" ng-click="vm.addMantra()">Add Mantra</md-button>
+            <p>
+                Make sure speakers are on, then add mantras, then click the mantras' "mantra" buttons repeatedly to transfigure.
+            </p>
+        </section>
+        <md-card ng-repeat="speakr in vm.speakrs">
+            <speakr></speakr>
+        </md-card>
+    </md-content>
 
 </div>
