@@ -21,3 +21,8 @@ To compile the project and run it minified from the dist directory, run:
 To run tests, run:
 
     gulp test
+
+Demo is at:
+
+    http://noo-stim.phonephreak.net
+    
