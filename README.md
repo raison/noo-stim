@@ -24,5 +24,5 @@ To run tests, run:
 
 Demo is at:
 
-    http://noo-stim.phonephreak.net
+    http://phonephreak.net/noo-stim
     
